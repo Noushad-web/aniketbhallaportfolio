@@ -1,0 +1,36 @@
+#logo {
+    width: 73px;
+    height: 52px;
+}
+
+.navbar__container-fluid {
+    position: relative;
+    margin: {
+        top: 1.915rem;
+        bottom: 12.935rem;
+    }
+
+    .navbar__container {
+        @include flex-between();
+        flex-flow: row nowrap;
+
+        .navbar__items-container {
+            @include flex-between();
+            flex-flow: row nowrap;
+            gap: 0;
+            position: relative;
+            z-index: 500;
+
+            .navbar__nav-item {
+                font-weight: $fw-regular;
+                text-transform: capitalize;
+                font-size: 2rem;
+                padding: 0.45em 1.7em;
+            }
+
+            .navbar__nav-item:any-link {
+                color: black;
+            }
+        }
+    }
+}

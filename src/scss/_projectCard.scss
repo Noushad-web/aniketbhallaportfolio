@@ -1,0 +1,51 @@
+@import "./projectSubDescriptionCard";
+
+.projectCard {
+    margin-bottom: 19rem;
+    gap: 0 5rem;
+
+    .projectCard__description {
+        margin-bottom: 3rem;
+        width: 98%;
+    }
+    .projectCard__linkBtn {
+        font-weight: $fw-medium;
+        font-size: 1.8rem;
+        line-height: 1.63em;
+        border-radius: 5px;
+        padding: 0.3888889em 1.555556em;
+    }
+    .projectCard__imgBox {
+        position: relative;
+
+        .projectCard__img {
+            position: absolute;
+            transition: 1s z-index 0s ease, 500ms opacity 0s ease;
+            // box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.25);
+        }
+        .projectCard__imgOne {
+            top: 5.7rem;
+            width: 43.2rem;
+            height: 21.4rem;
+            z-index: 2;
+            opacity: 100%;
+
+            &:hover {
+                z-index: 1;
+                opacity: 20%;
+            }
+        }
+        .projectCard__imgTwo {
+            top: 20.4rem;
+            width: 43.9rem;
+            height: 21.4rem;
+            right: 0;
+            z-index: 1;
+            opacity: 20%;
+            &:hover {
+                z-index: 2;
+                opacity: 100%;
+            }
+        }
+    }
+}

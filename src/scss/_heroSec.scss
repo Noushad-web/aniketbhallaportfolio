@@ -1,0 +1,45 @@
+#heroSec {
+    & .heroSec__greetText {
+        color: $tertiary-grey-color;
+        font-weight: $fw-bold;
+        font-size: 1.9rem;
+        line-height: 1.5em;
+        letter-spacing: 0.39em;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0;
+            bottom: 0;
+            display: inline-block;
+            width: 2.1rem;
+            height: 2.2rem;
+            background: url("/assets/hand-logo.svg") no-repeat center;
+            // border: 0.5px solid black;
+            left: -28px;
+        }
+    }
+
+    & .heroSec__heading {
+        color: $text-color;
+        font-weight: $fw-semi-bold;
+        font-size: 6rem;
+        line-height: 1.5em;
+    }
+
+    & .heroSec__subheading {
+        width: 69ch;
+        margin-bottom: 2.2222em;
+    }
+
+    & .heroSec__ctaBtn {
+        font-size: 2.2rem;
+        line-height: 1.63em;
+        padding: 0.18182em 1.4545em;
+        font-weight: $fw-medium;
+        border-radius: 3px;
+    }
+}

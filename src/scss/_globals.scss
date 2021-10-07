@@ -1,0 +1,138 @@
+// Poppins font
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+// colors
+$primary-pink-color: #ce3461;
+// $secondary-whitesmoke-color: #f9f9f9; //mine
+$secondary-whitesmoke-color: #fafafa; // now
+$tertiary-grey-color: #6c6c6c;
+$white-color: #ffffff;
+$text-color: #000000;
+$light-text-color: #4f4f4f; // want to use this | try it for text & headings black
+
+// font weights
+$fw-thin: 100;
+$fw-xlight: 200;
+$fw-light: 300;
+$fw-regular: 400;
+$fw-medium: 500;
+$fw-semi-bold: 600;
+$fw-bold: 700;
+$fw-xbold: 800;
+$fw-heavy: 900;
+
+// device breakpoints
+$bp-redmiNote7Pro: 393px;
+
+html {
+    font-size: 62.5%; // 1rem = 10px
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif !important;
+}
+
+body {
+    background-color: rgb(255, 255, 255) !important; // #fff
+
+    // hero section curve
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 57.086rem;
+        height: 52.411rem;
+        background: url("/assets/hero-sec-curve.svg") no-repeat;
+    }
+}
+
+body,
+* {
+    font-family: inherit !important;
+}
+
+ul {
+    list-style: none;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 0;
+}
+
+a:any-link {
+    text-decoration: none;
+}
+
+#scrollToTopBtn {
+    display: inline-block;
+    right: 33px;
+    bottom: 24px;
+    padding: 16.55px 13.64px;
+    position: fixed;
+    z-index: 1000;
+    background-color: $primary-pink-color;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    scroll-behavior: smooth;
+}
+
+// portfolio common component styles
+.portfolioText {
+    color: $light-text-color;
+    font-weight: $fw-regular;
+    font-size: 1.8rem;
+    line-height: 1.63em;
+}
+
+.portfolioMainHeading {
+    color: $text-color;
+    font-size: 3.1rem;
+    line-height: 1.63em;
+}
+
+.portfolioProjectHeading {
+    color: $primary-pink-color;
+    font-size: 2.6rem;
+    line-height: 1.63em;
+    text-transform: capitalize;
+    margin-bottom: 0.576923em; // 15px
+}
+
+.portfolioMainHeading,
+.portfolioProjectHeading {
+    font-weight: $fw-semi-bold;
+}
+
+// helper classes
+.redBorder {
+    border: 2px solid red;
+}
+.greenBorder {
+    border: 2px solid green;
+}
+
+.__pink-text-color {
+    color: $primary-pink-color;
+}
+
+// helper mixins
+@mixin flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

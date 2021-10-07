@@ -1,0 +1,23 @@
+.projectSubDescriptionCard {
+    background-color: $secondary-whitesmoke-color;
+    margin-bottom: 5.4rem;
+    border-radius: 3px;
+    padding: 2.5rem 2rem;
+
+    & .projectSubDescriptionCard__subHeading,
+    & .projectSubDescriptionCard__subText {
+        font-size: 1.5rem;
+        line-height: 1.164em;
+    }
+    & .projectSubDescriptionCard__subHeading {
+        color: $text-color;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        font-weight: $fw-semi-bold;
+        margin-right: 0.6666667em;
+    }
+
+    & .projectSubDescriptionCard__subText {
+        color: $light-text-color;
+    }
+}

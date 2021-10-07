@@ -1,0 +1,40 @@
+@import "techTool";
+
+#techToolsSec {
+    margin-bottom: 25rem; // delete it
+
+    .techToolsSec__heading {
+        margin-bottom: 5.897rem;
+    }
+
+    .techToolsSec__outerBorderedBox {
+        margin: 0 -2.537rem;
+        padding: 2.537rem;
+        background-color: $secondary-whitesmoke-color;
+        position: relative;
+
+        .techToolsSec__innerBorderedBox {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-color: $primary-pink-color;
+            clip-path: polygon(62% 0, 100% 0%, 100% 100%, 36% 100%);
+        }
+
+        .techToolsSec__contentBox {
+            position: relative;
+            z-index: 10;
+            background-color: $white-color;
+            padding: 8.635rem 8.449rem;
+
+            .techToolsSec__iconsGridBox {
+                display: flex;
+                justify-content: space-between;
+                flex-flow: row wrap;
+                gap: 4rem 25rem;
+            }
+        }
+    }
+}
